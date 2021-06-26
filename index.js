@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static("blog"));
 app.use(fileUpload());
 
-const serviceAccount = require("./retro-blogs-firebase-adminsdk-bipve-db862c67c9.json");
+const serviceAccount = require("./ServiceAccount/retro-blogs-firebase-adminsdk-bipve-db862c67c9.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
