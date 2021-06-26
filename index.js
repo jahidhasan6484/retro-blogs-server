@@ -21,7 +21,7 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
 
-const port = 5000;
+const port = 4000;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
